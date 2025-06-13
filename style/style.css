@@ -1,0 +1,87 @@
+/* Fondo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Formulario */
+.user-form {
+  margin: 2rem 0;
+}
+
+#search {
+  padding: 12px 20px;
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: #1e1e1e;
+  color: #0ff;
+  outline: none;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+  transition: 0.3s ease;
+}
+
+#search::placeholder {
+  color: #0ff8;
+}
+
+#search:focus {
+  box-shadow: 0 0 15px #0ff, 0 0 25px #0ff inset;
+}
+
+/* Contenedor principal */
+#main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* Tarjeta Pokémon */
+.card {
+  background: #111;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px #0ff4;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #0ff;
+}
+
+/* Imagen Pokémon */
+.card img.img {
+  width: 100px;
+  height: 100px;
+  image-rendering: pixelated;
+  margin-bottom: 0.5rem;
+}
+
+/* Nombre Pokémon */
+.user-info h2 {
+  color: #0ff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Mensaje de error */
+.card h1 {
+  color: #f55;
+  font-size: 1.3rem;
+}
+
+
